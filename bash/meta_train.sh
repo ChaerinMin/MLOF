@@ -1,0 +1,2 @@
+python meta_train.py --dataset sintel --validation sintel --name sintel_ml --model ./checkpoints/gma-things.pth --crossval 1
+python meta_train.py --dataset kitti --validation kitti --name kitti_ml --model ./checkpoints/gma-things.pth --crossval 1

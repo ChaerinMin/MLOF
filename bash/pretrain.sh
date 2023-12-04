@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+python pretrain.py --name gma-chairs --stage chairs --validation chairs --output ./results/pretrained/ --num_steps 120000 --lr 0.00025 --image_size 368 496 --wdecay 0.0001 --gpus 0 --batch_size 8 --val_freq 10000 --print_freq 100 --mixed_precision
+python pretrain.py --name gma-things --stage things --validation sintel --output ./results/pretrained/ --num_steps 120000 --lr 0.000125 --image_size 400 720 --wdecay 0.0001 --gpus 0 --batch_size 6 --val_freq 10000 --print_freq 100 --mixed_precision --restore_ckpt ./results/chairs/gma/gma-chairs.pth
